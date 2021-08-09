@@ -1,0 +1,99 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width:  100vw;
+}
+
+.white{
+    color: white;
+    font-weight: 500;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+    &:hover{
+        color: darken($color: white, $amount: 20) ;
+    }
+}
+
+.azure{
+    color: #1e739b;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+    &:hover{
+        color: lighten(#1e739b, $amount: 10) ;
+    }
+}
+
+main {
+    width: 100%;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+
+.mt-5{
+    margin-top: 20px;
+}
+
+.mb-1{
+    margin-bottom: 5px;
+}
+
+.mb-5{
+    margin-bottom: 20px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+html, body {
+    background-color: $light-grey ;
+}
+
+.fa{
+    margin-right: 8px;
+    text-shadow: 3px 2px 19px #0000001f;
+}
+
+h1, h2, h3, h4, h5 {
+    text-shadow: 3px 2px 19px #0000001f;
+}
+
+.h3, h3 {
+    font-size: 1.45rem;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #2196f3;
+}
+.swal2-title {
+    font-size: 1.675em;
+}
+.btn-primary,.btn-primary.focus, .btn-primary:focus, .swal2-styled.swal2-confirm  {
+    color: #fff;
+    background-color: #1d7097;
+    border-color: #1d7097;
+
+    &:hover{
+        background-color: lighten(#1e739b, $amount: 10) ;
+    }
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: lighten(#1e739b, $amount: 15) ;
+    border-color: #1e739b;
+}
+a {
+    color: #1e739b;
+}
+img.login-icon {
+    width: auto;
+    height: 157px;
+    margin-left: 30%;
+    padding-bottom: 10px;
+}

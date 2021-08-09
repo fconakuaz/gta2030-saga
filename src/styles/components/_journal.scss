@@ -1,0 +1,105 @@
+.journal__main-content{
+    display: flex;
+}
+
+.journal__sidebar{
+    background-color: $dark-grey;
+    color: #1e739b;
+    display: grid;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -6px 0 8px 12px #00000003;
+    border-right: 0.5px solid #c7c7c7d1;
+    width: 350px;
+}
+
+.journal__sidebar-navbar{
+    display: flex !important;
+    width: 100%;
+    justify-content: space-between !important;
+    
+    h3{
+        font-weight: 100;
+        font-size:   x-large
+    }
+}
+
+.journal__new-entry{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    transition: color 0.3s ease;
+    &:hover{
+        color: lighten($color: #1e739b, $amount: 10) ;
+        
+    }
+}
+
+.journal__entries{
+    flex: 1 1 auto;
+    margin-top: 13px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+.journal__entry{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 0px #0000000f;
+    border: 0.5px solid #ccccccad;
+    color: $dark-grey;
+    display: flex;
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+}
+
+.journal__entry-picture{
+    height: 75px;
+    width: 75px;
+    box-shadow: 0px 11px 8px #cccccc54;
+    border-right: 0.5px solid #cccccc4a;
+}
+.journal__entry-body{
+    height: 73px;
+    overflow: hidden;
+    padding:6px 10px 10px 10px;
+    width: 170px;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    text-shadow: 3px 1px 10px #0000002b;
+}
+
+.journal__entry-title{
+    font-size: 15px;
+    color: #1e739b;
+    font-weight: bold;
+    margin-bottom: 0px;
+    overflow: hidden;
+    height: 25px;
+    transition: all 0.5s ease;
+}
+
+.journal__entry-content{
+    font-size: 13px;
+    color: rgb(14, 14, 14);
+}
+
+.journal__entry-date-box{
+    align-items: center;
+    color: rgb(14, 14, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 13px 13px 5px 3px;
+}
+
+.journal__entry-date-box{
+    color: #1e739b;
+    font-size: 12px;
+}
